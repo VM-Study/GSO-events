@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #E26D5A, #D65542);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 5px solid #C44C3B;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.subheading {
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.filter-btn {
+    padding: 12px 20px;
+    border: none;
+    background: #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.filter-btn:hover {
+    background: #E26D5A;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filter-btn.active {
+    background: #E26D5A;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.session {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.session:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.date {
+    font-size: 16px;
+    font-weight: bold;
+    color: #391313;
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f3f0f0;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #C44C3B;
+    font-weight: bold;
+}
+
+.type {
+    font-size: 16px;
+    font-weight: bold;
+    color: #E26D5A;
+}
+
+.time-location {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.description {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.details-btn {
+    margin-top: auto;
+    padding: 14px;
+    background: linear-gradient(135deg, #E26D5A, #D65542);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.details-btn:hover {
+    background: #C44C3B;
+}
